@@ -17,7 +17,6 @@
             color: #ffffff;
         }
 
-        /* Top Bar / Header */
         header {
             background-color: #120921;
             border-bottom: 1px solid #23123d;
@@ -76,7 +75,6 @@
             background-color: #9d4edd;
         }
 
-        /* Main Container */
         .container {
             max-width: 1200px;
             margin: 20px auto;
@@ -96,7 +94,6 @@
             line-height: 1.4;
         }
 
-        /* Grid Layout */
         .content-grid {
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -112,7 +109,6 @@
             }
         }
 
-        /* Left Side */
         .left-col {
             display: flex;
             flex-direction: column;
@@ -164,7 +160,6 @@
             margin-bottom: 8px;
         }
 
-        /* Right Side */
         .right-col {
             display: flex;
             flex-direction: column;
@@ -217,7 +212,6 @@
             color: #a093be;
         }
 
-        /* Pricing Box */
         .pricing-card {
             background-color: #140a24;
             border: 1px solid #23123d;
@@ -226,6 +220,11 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
+        }
+
+        .price-option-link {
+            text-decoration: none;
+            display: block;
         }
 
         .price-option {
@@ -276,7 +275,6 @@
 </head>
 <body>
 
-    <!-- Cabeçalho idêntico -->
     <header>
         <div class="logo-area">
             <a href="#" class="logo">🎮 GameMarket</a>
@@ -290,16 +288,13 @@
     </header>
 
     <div class="container">
-        <!-- Caminho de pão de ló / breadcrumb -->
         <div class="breadcrumb">
             Início > Roblox > BLOX FRUITS - LV2800 | V4 FULL |...
         </div>
 
-        <!-- Título do Anúncio -->
         <h1 class="main-title">BLOX FRUITS - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART | DRAGON | MÍTICAS - ROBLOX</h1>
 
         <div class="content-grid">
-            <!-- Esquerda: Banner e Descrição -->
             <div class="left-col">
                 <div class="banner-card">
                     <p style="font-size: 14px; color: #ffb703; margin-bottom: 5px;">sunshinezito</p>
@@ -319,7 +314,6 @@
                 </div>
             </div>
 
-            <!-- Direita: Perfil do Vendedor e Valores -->
             <div class="right-col">
                 <div class="seller-card">
                     <div class="seller-profile">
@@ -335,17 +329,21 @@
                 </div>
 
                 <div class="pricing-card">
-                    <div class="price-option">
-                        <p>⚡ OFERTA ESPECIAL - LV2800 +GOD HUMAN +99% CHANCES DE FRUTAS MÍTICAS</p>
-                        <div class="price-value">R$ 3,49</div>
-                    </div>
+                    <a href="https://wa.me/SEUNUMERO" target="_blank" class="price-option-link">
+                        <div class="price-option">
+                            <p>⚡ OFERTA ESPECIAL - LV2800 +GOD HUMAN +99% CHANCES DE FRUTAS MÍTICAS</p>
+                            <div class="price-value">R$ 3,49</div>
+                        </div>
+                    </a>
 
-                    <div class="price-option">
-                        <p>⚡ OFERTA ESPECIAL - LV2800 +CHANCE DE FRUTAS MÍTICAS (+1 CONTA GRÁTIS)</p>
-                        <div class="price-value">R$ 1,00</div>
-                    </div>
+                    <a href="https://wa.me/SEUNUMERO" target="_blank" class="price-option-link">
+                        <div class="price-option">
+                            <p>⚡ OFERTA ESPECIAL - LV2800 +CHANCE DE FRUTAS MÍTICAS (+1 CONTA GRÁTIS)</p>
+                            <div class="price-value">R$ 1,00</div>
+                        </div>
+                    </a>
 
-                    <a href="#" class="btn-buy">Comprar Agora</a>
+                    <a href="https://wa.me/SEUNUMERO" target="_blank" class="btn-buy">Comprar Agora</a>
                 </div>
             </div>
         </div>
