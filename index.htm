@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site RGB</title>
+    <title>Blox Fruits - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART</title>
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
@@ -13,102 +12,241 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Animação do Fundo RGB */
-        @keyframes rgb-background {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        /* Animação de Texto Neon */
-        @keyframes neon-glow {
-            0%, 100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
-            33% { text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00; }
-            66% { text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff; }
-        }
-
-        /* Animação da Borda do Card */
-        @keyframes border-rgb {
-            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
-            33% { border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
-            66% { border-color: #0000ff; box-shadow: 0 0 15px #0000ff; }
-            100% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
-        }
-
-        /* Corpo da página com o fundo animado */
         body {
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: linear-gradient(-45deg, #ff0055, #00ff66, #0066ff, #ffcc00);
-            background-size: 400% 400%;
-            animation: rgb-background 10vh infinite ease-in-out;
-            overflow: hidden;
+            background-color: #0d061f;
+            color: #ffffff;
+            padding: 20px;
         }
 
-        /* Container Principal (Card) */
         .container {
-            background: rgba(15, 15, 15, 0.85);
-            padding: 3rem;
-            border-radius: 15px;
-            border: 3px solid #ff0000;
-            text-align: center;
-            backdrop-filter: blur(10px);
-            animation: border-rgb 6s infinite linear;
-            max-width: 500px;
-            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        /* Título Principal */
-        h1 {
-            color: #fff;
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-            letter-spacing: 2px;
-            animation: neon-glow 6s infinite linear;
+        .breadcrumb {
+            font-size: 14px;
+            color: #a0a0a0;
+            margin-bottom: 20px;
         }
 
-        /* Subtítulo */
-        p {
-            color: #e0e0e0;
-            font-size: 1.1rem;
-            margin-bottom: 2rem;
-            text-shadow: 0 0 5px rgba(0,0,0,0.5);
-        }
-
-        /* Botão Estilo Gamer */
-        .btn-rgb {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            font-size: 1rem;
+        .title {
+            font-size: 24px;
             font-weight: bold;
-            color: #fff;
-            text-decoration: none;
-            background: transparent;
-            border: 2px solid #fff;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            margin-bottom: 25px;
+            color: #ffffff;
+            line-height: 1.4;
         }
 
-        /* Efeito de Hover no Botão */
-        .btn-rgb:hover {
-            background: #fff;
-            color: #000;
-            box-shadow: 0 0 20px #fff, 0 0 40px #fff;
-            transform: scale(1.05);
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .left-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .banner-box {
+            background: linear-gradient(135deg, #2a1147, #130a24);
+            border: 1px solid #4a2179;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .description-box {
+            background-color: #170b2c;
+            border: 1px solid #321659;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .description-box h3 {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #ffcc00;
+        }
+
+        .description-box p {
+            font-size: 14px;
+            color: #d0d0d0;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .right-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .seller-card {
+            background-color: #170b2c;
+            border: 1px solid #321659;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .seller-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .seller-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ff7700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .seller-details h4 {
+            font-size: 16px;
+            color: #ffffff;
+        }
+
+        .seller-details span {
+            font-size: 12px;
+            color: #00ff88;
+            background: rgba(0, 255, 136, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .price-box {
+            background-color: #170b2c;
+            border: 1px solid #321659;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .price-option {
+            background: #241242;
+            border: 1px solid #5d289e;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .price-option:hover {
+            border-color: #9d4edd;
+        }
+
+        .price-option p {
+            font-size: 13px;
+            color: #e0e0e0;
+            margin-bottom: 8px;
+        }
+
+        .price-option .value {
+            font-size: 18px;
+            font-weight: bold;
+            color: #00ff88;
+        }
+
+        .buy-btn {
+            display: block;
+            width: 100%;
+            background-color: #00ff88;
+            color: #0d061f;
+            text-align: center;
+            padding: 15px;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 15px;
+            transition: 0.2s;
+        }
+
+        .buy-btn:hover {
+            background-color: #00cc6a;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>SISTEMA INICIADO</h1>
-        <p>Bem-vindo à primeira interface do seu novo projeto rodando direto do GitHub.</p>
-        <a href="#" class="btn-rgb">ENTRAR NO FLUXO</a>
+        <!-- Caminho de Navegação -->
+        <div class="breadcrumb">
+            Início > Roblox > BLOX FRUITS - LV2800 | V4 FULL |...
+        </div>
+
+        <!-- Título Principal -->
+        <h1 class="title">BLOX FRUITS - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART | DRAGON | MÍTICAS - ROBLOX</h1>
+
+        <div class="main-content">
+            <!-- Coluna Esquerda: Imagem e Descrição -->
+            <div class="left-column">
+                <div class="banner-box">
+                    <!-- Podes substituir o link da imagem abaixo pela tua imagem principal -->
+                    <h2 style="color: #ffcc00; margin-bottom: 15px; font-size: 28px;">CONTAS BLOX FRUITS</h2>
+                    <p style="color: #ffffff; font-size: 20px; font-weight: bold;">GANHE +12 CONTAS GRÁTIS</p>
+                </div>
+
+                <div class="description-box">
+                    <h3>Descrição</h3>
+                    <p>⚡ **ENVIO RÁPIDO (FEITO EM 1 SEGUNDO)**</p>
+                    <br>
+                    <p>🎁 **BÔNUS EXCLUSIVO:**</p>
+                    <p>❤ Compras acima de R$ 60,00 — receba 12 contas grátis</p>
+                    <p>❤ Compras acima de R$ 40,00 — receba 5 contas grátis</p>
+                    <p>❤ Compras acima de R$ 26,00 — receba 4 contas grátis</p>
+                    <p>❤ Compras acima de R$ 10,00 — receba 3 contas grátis</p>
+                </div>
+            </div>
+
+            <!-- Coluna Direita: Vendedor e Opções de Compra -->
+            <div class="right-column">
+                <div class="seller-card">
+                    <div class="seller-info">
+                        <div class="seller-avatar">S</div>
+                        <div class="seller-details">
+                            <h4>Sunshinezito</h4>
+                            <span>Verified</span>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: #a0a0a0;">⭐ 5.0 (3899 avaliações)</p>
+                </div>
+
+                <div class="price-box">
+                    <div class="price-option">
+                        <p>⚡ OFERTA ESPECIAL - LV2800 +GOD HUMAN +99% CHANCES DE FRUTAS MÍTICAS</p>
+                        <div class="value">R$ 3,49</div>
+                    </div>
+
+                    <div class="price-option">
+                        <p>⚡ OFERTA ESPECIAL - LV2800 +CHANCE DE FRUTAS MÍTICAS (+1 CONTA GRÁTIS)</p>
+                        <div class="value">R$ 1,00</div>
+                    </div>
+
+                    <a href="#" class="buy-btn">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
