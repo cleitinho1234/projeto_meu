@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,82 +9,43 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
         }
 
         body {
-            background-color: #0b0614;
+            background-color: #0f172a;
             color: #ffffff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         header {
-            background-color: #120921;
-            border-bottom: 1px solid #23123d;
-            padding: 12px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-        }
-
-        .logo-area {
-            display: flex;
-            align-items: center;
-            gap: 20px;
+            background-color: #1e293b;
+            padding: 15px 25px;
+            border-radius: 12px;
+            margin-bottom: 25px;
+            border: 1px solid #334155;
         }
 
         .logo {
             font-size: 20px;
             font-weight: bold;
-            color: #ff3366;
+            color: #38bdf8;
             text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .search-bar {
-            background-color: #1a0f2e;
-            border: 1px solid #2d184d;
-            border-radius: 8px;
-            padding: 8px 16px;
-            width: 400px;
-            display: flex;
-            align-items: center;
-            color: #8c7fa6;
-            font-size: 14px;
-        }
-
-        .user-actions {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .btn-anunciar {
-            background-color: #7b2cbf;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: 0.2s;
-        }
-
-        .btn-anunciar:hover {
-            background-color: #9d4edd;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 15px;
         }
 
         .breadcrumb {
             font-size: 13px;
-            color: #7d7098;
-            margin-bottom: 20px;
+            color: #94a3b8;
+            margin-bottom: 15px;
         }
 
         .main-title {
@@ -104,122 +65,88 @@
             .content-grid {
                 grid-template-columns: 1fr;
             }
-            .search-bar {
-                display: none;
-            }
         }
 
-        .left-col {
+        .left-col, .right-col {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
         .banner-card {
-            background: linear-gradient(135deg, #3c096c, #10002b);
-            border: 1px solid #5a189a;
+            background: linear-gradient(135deg, #1e1b4b, #3b0764);
+            border: 1px solid #4f46e5;
             border-radius: 12px;
             padding: 30px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
         .banner-card h2 {
             font-size: 32px;
-            color: #ffb703;
-            font-weight: 900;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            color: #fde68a;
             margin-bottom: 10px;
         }
 
         .banner-card p {
-            font-size: 22px;
-            color: #ffffff;
+            font-size: 20px;
             font-weight: bold;
         }
 
-        .description-card {
-            background-color: #140a24;
-            border: 1px solid #23123d;
+        .description-card, .seller-card, .pricing-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
             border-radius: 12px;
-            padding: 24px;
+            padding: 20px;
         }
 
         .description-card h3 {
             font-size: 18px;
             margin-bottom: 15px;
-            border-bottom: 1px solid #23123d;
+            border-bottom: 1px solid #334155;
             padding-bottom: 10px;
         }
 
         .description-card p {
             font-size: 14px;
-            color: #b8b2cb;
+            color: #cbd5e1;
             line-height: 1.6;
             margin-bottom: 8px;
-        }
-
-        .right-col {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .seller-card {
-            background-color: #140a24;
-            border: 1px solid #23123d;
-            border-radius: 12px;
-            padding: 20px;
         }
 
         .seller-profile {
             display: flex;
             align-items: center;
             gap: 12px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .seller-avatar {
             width: 45px;
             height: 45px;
-            background-color: #ffb703;
+            background-color: #f59e0b;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            color: #0b0614;
+            color: #1c1604;
             font-size: 18px;
         }
 
-        .seller-info h4 {
-            font-size: 16px;
-        }
-
         .seller-badge {
-            background-color: rgba(0, 255, 136, 0.15);
-            color: #00ff88;
+            background-color: #22c55e26;
+            color: #4ade80;
             font-size: 11px;
             padding: 2px 8px;
             border-radius: 4px;
             display: inline-block;
             margin-top: 4px;
+            border: 1px solid #34d39933;
         }
 
         .seller-stats {
             font-size: 13px;
-            color: #a093be;
-        }
-
-        .pricing-card {
-            background-color: #140a24;
-            border: 1px solid #23123d;
-            border-radius: 12px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
+            color: #94a3b8;
         }
 
         .price-option-link {
@@ -228,21 +155,22 @@
         }
 
         .price-option {
-            background-color: #1d1033;
-            border: 1px solid #3c1f6b;
+            background-color: #0f172a;
+            border: 1px solid #334155;
             border-radius: 8px;
             padding: 14px;
             cursor: pointer;
             transition: 0.2s;
+            margin-bottom: 12px;
         }
 
         .price-option:hover {
-            border-color: #7b2cbf;
+            border-color: #6366f1;
         }
 
         .price-option p {
             font-size: 13px;
-            color: #d1c8e8;
+            color: #e2e8f0;
             margin-bottom: 8px;
             line-height: 1.4;
         }
@@ -250,44 +178,36 @@
         .price-value {
             font-size: 18px;
             font-weight: bold;
-            color: #00ff88;
+            color: #4ade80;
         }
 
         .btn-buy {
             display: block;
             width: 100%;
-            background-color: #00ff88;
-            color: #0b0614;
+            background-color: #22c55e;
+            color: #0f172a;
             text-align: center;
             padding: 14px;
             border-radius: 8px;
             font-weight: bold;
             font-size: 16px;
             text-decoration: none;
-            margin-top: 5px;
             transition: 0.2s;
         }
 
         .btn-buy:hover {
-            background-color: #00cc6a;
+            background-color: #16a34a;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-area">
-            <a href="#" class="logo">🎮 GameMarket</a>
-            <div class="search-bar">
-                🔍 Buscar produtos, contas, skins...
-            </div>
-        </div>
-        <div class="user-actions">
-            <button class="btn-anunciar">Anunciar</button>
-        </div>
-    </header>
-
     <div class="container">
+        <header>
+            <a href="#" class="logo">🎮 GameMarket</a>
+            <div style="font-size: 14px; color: #94a3b8;">Painel de Vendas</div>
+        </header>
+
         <div class="breadcrumb">
             Início > Roblox > BLOX FRUITS - LV2800 | V4 FULL |...
         </div>
@@ -297,7 +217,7 @@
         <div class="content-grid">
             <div class="left-col">
                 <div class="banner-card">
-                    <p style="font-size: 14px; color: #ffb703; margin-bottom: 5px;">sunshinezito</p>
+                    <p style="font-size: 14px; color: #fde68a; margin-bottom: 5px;">sunshinezito</p>
                     <h2>CONTAS BLOX FRUITS</h2>
                     <p>GANHE +12 CONTAS GRÁTIS</p>
                 </div>
@@ -318,7 +238,7 @@
                 <div class="seller-card">
                     <div class="seller-profile">
                         <div class="seller-avatar">S</div>
-                        <div class="seller-info">
+                        <div>
                             <h4>Sunshinezito</h4>
                             <span class="seller-badge">Verificado</span>
                         </div>
