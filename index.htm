@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blox Fruits - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART</title>
+    <title>Blox Fruits - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART | DRAGON | MÍTICAS - Roblox</title>
     <style>
         * {
             margin: 0;
@@ -13,205 +13,305 @@
         }
 
         body {
-            background-color: #0d061f;
+            background-color: #0b0614;
             color: #ffffff;
-            padding: 20px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        /* Top Bar / Header */
+        header {
+            background-color: #120921;
+            border-bottom: 1px solid #23123d;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
 
-        .breadcrumb {
-            font-size: 14px;
-            color: #a0a0a0;
-            margin-bottom: 20px;
-        }
-
-        .title {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 25px;
-            color: #ffffff;
-            line-height: 1.4;
-        }
-
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
+        .logo-area {
+            display: flex;
+            align-items: center;
             gap: 20px;
         }
 
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff3366;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .search-bar {
+            background-color: #1a0f2e;
+            border: 1px solid #2d184d;
+            border-radius: 8px;
+            padding: 8px 16px;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            color: #8c7fa6;
+            font-size: 14px;
+        }
+
+        .user-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .btn-anunciar {
+            background-color: #7b2cbf;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn-anunciar:hover {
+            background-color: #9d4edd;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .breadcrumb {
+            font-size: 13px;
+            color: #7d7098;
+            margin-bottom: 20px;
+        }
+
+        .main-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        /* Grid Layout */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+        }
+
         @media (max-width: 900px) {
-            .main-content {
+            .content-grid {
                 grid-template-columns: 1fr;
+            }
+            .search-bar {
+                display: none;
             }
         }
 
-        .left-column {
+        /* Left Side */
+        .left-col {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
-        .banner-box {
-            background: linear-gradient(135deg, #2a1147, #130a24);
-            border: 1px solid #4a2179;
+        .banner-card {
+            background: linear-gradient(135deg, #3c096c, #10002b);
+            border: 1px solid #5a189a;
             border-radius: 12px;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            position: relative;
+            overflow: hidden;
         }
 
-        .banner-box img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .description-box {
-            background-color: #170b2c;
-            border: 1px solid #321659;
-            border-radius: 12px;
-            padding: 20px;
-        }
-
-        .description-box h3 {
-            margin-bottom: 15px;
-            font-size: 18px;
-            color: #ffcc00;
-        }
-
-        .description-box p {
-            font-size: 14px;
-            color: #d0d0d0;
-            line-height: 1.6;
+        .banner-card h2 {
+            font-size: 32px;
+            color: #ffb703;
+            font-weight: 900;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
             margin-bottom: 10px;
         }
 
-        .right-column {
+        .banner-card p {
+            font-size: 22px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .description-card {
+            background-color: #140a24;
+            border: 1px solid #23123d;
+            border-radius: 12px;
+            padding: 24px;
+        }
+
+        .description-card h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #23123d;
+            padding-bottom: 10px;
+        }
+
+        .description-card p {
+            font-size: 14px;
+            color: #b8b2cb;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+
+        /* Right Side */
+        .right-col {
             display: flex;
             flex-direction: column;
             gap: 20px;
         }
 
         .seller-card {
-            background-color: #170b2c;
-            border: 1px solid #321659;
+            background-color: #140a24;
+            border: 1px solid #23123d;
             border-radius: 12px;
             padding: 20px;
         }
 
-        .seller-info {
+        .seller-profile {
             display: flex;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 15px;
+            gap: 12px;
+            margin-bottom: 12px;
         }
 
         .seller-avatar {
-            width: 50px;
-            height: 50px;
+            width: 45px;
+            height: 45px;
+            background-color: #ffb703;
             border-radius: 50%;
-            background-color: #ff7700;
             display: flex;
             align-items: center;
             justify-content: center;
             font-weight: bold;
-            font-size: 20px;
+            color: #0b0614;
+            font-size: 18px;
         }
 
-        .seller-details h4 {
+        .seller-info h4 {
             font-size: 16px;
-            color: #ffffff;
         }
 
-        .seller-details span {
-            font-size: 12px;
+        .seller-badge {
+            background-color: rgba(0, 255, 136, 0.15);
             color: #00ff88;
-            background: rgba(0, 255, 136, 0.1);
-            padding: 2px 6px;
+            font-size: 11px;
+            padding: 2px 8px;
             border-radius: 4px;
+            display: inline-block;
+            margin-top: 4px;
         }
 
-        .price-box {
-            background-color: #170b2c;
-            border: 1px solid #321659;
+        .seller-stats {
+            font-size: 13px;
+            color: #a093be;
+        }
+
+        /* Pricing Box */
+        .pricing-card {
+            background-color: #140a24;
+            border: 1px solid #23123d;
             border-radius: 12px;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
         }
 
         .price-option {
-            background: #241242;
-            border: 1px solid #5d289e;
+            background-color: #1d1033;
+            border: 1px solid #3c1f6b;
             border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 10px;
+            padding: 14px;
             cursor: pointer;
             transition: 0.2s;
         }
 
         .price-option:hover {
-            border-color: #9d4edd;
+            border-color: #7b2cbf;
         }
 
         .price-option p {
             font-size: 13px;
-            color: #e0e0e0;
+            color: #d1c8e8;
             margin-bottom: 8px;
+            line-height: 1.4;
         }
 
-        .price-option .value {
+        .price-value {
             font-size: 18px;
             font-weight: bold;
             color: #00ff88;
         }
 
-        .buy-btn {
+        .btn-buy {
             display: block;
             width: 100%;
             background-color: #00ff88;
-            color: #0d061f;
+            color: #0b0614;
             text-align: center;
-            padding: 15px;
+            padding: 14px;
             border-radius: 8px;
             font-weight: bold;
-            text-decoration: none;
             font-size: 16px;
-            margin-top: 15px;
+            text-decoration: none;
+            margin-top: 5px;
             transition: 0.2s;
         }
 
-        .buy-btn:hover {
+        .btn-buy:hover {
             background-color: #00cc6a;
         }
     </style>
 </head>
 <body>
 
+    <!-- Cabeçalho idêntico -->
+    <header>
+        <div class="logo-area">
+            <a href="#" class="logo">🎮 GameMarket</a>
+            <div class="search-bar">
+                🔍 Buscar produtos, contas, skins...
+            </div>
+        </div>
+        <div class="user-actions">
+            <button class="btn-anunciar">Anunciar</button>
+        </div>
+    </header>
+
     <div class="container">
-        <!-- Caminho de Navegação -->
+        <!-- Caminho de pão de ló / breadcrumb -->
         <div class="breadcrumb">
             Início > Roblox > BLOX FRUITS - LV2800 | V4 FULL |...
         </div>
 
-        <!-- Título Principal -->
-        <h1 class="title">BLOX FRUITS - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART | DRAGON | MÍTICAS - ROBLOX</h1>
+        <!-- Título do Anúncio -->
+        <h1 class="main-title">BLOX FRUITS - LV2800 | V4 FULL | MAGNET | KITSUNE | TTK | SANGUINE ART | DRAGON | MÍTICAS - ROBLOX</h1>
 
-        <div class="main-content">
-            <!-- Coluna Esquerda: Imagem e Descrição -->
-            <div class="left-column">
-                <div class="banner-box">
-                    <!-- Podes substituir o link da imagem abaixo pela tua imagem principal -->
-                    <h2 style="color: #ffcc00; margin-bottom: 15px; font-size: 28px;">CONTAS BLOX FRUITS</h2>
-                    <p style="color: #ffffff; font-size: 20px; font-weight: bold;">GANHE +12 CONTAS GRÁTIS</p>
+        <div class="content-grid">
+            <!-- Esquerda: Banner e Descrição -->
+            <div class="left-col">
+                <div class="banner-card">
+                    <p style="font-size: 14px; color: #ffb703; margin-bottom: 5px;">sunshinezito</p>
+                    <h2>CONTAS BLOX FRUITS</h2>
+                    <p>GANHE +12 CONTAS GRÁTIS</p>
                 </div>
 
-                <div class="description-box">
+                <div class="description-card">
                     <h3>Descrição</h3>
-                    <p>⚡ **ENVIO RÁPIDO (FEITO EM 1 SEGUNDO)**</p>
+                    <p>⚡ <strong>ENVIO RÁPIDO (FEITO EM 1 SEGUNDO)</strong></p>
                     <br>
-                    <p>🎁 **BÔNUS EXCLUSIVO:**</p>
+                    <p>🎁 <strong>BÔNUS EXCLUSIVO:</strong></p>
                     <p>❤ Compras acima de R$ 60,00 — receba 12 contas grátis</p>
                     <p>❤ Compras acima de R$ 40,00 — receba 5 contas grátis</p>
                     <p>❤ Compras acima de R$ 26,00 — receba 4 contas grátis</p>
@@ -219,31 +319,33 @@
                 </div>
             </div>
 
-            <!-- Coluna Direita: Vendedor e Opções de Compra -->
-            <div class="right-column">
+            <!-- Direita: Perfil do Vendedor e Valores -->
+            <div class="right-col">
                 <div class="seller-card">
-                    <div class="seller-info">
+                    <div class="seller-profile">
                         <div class="seller-avatar">S</div>
-                        <div class="seller-details">
+                        <div class="seller-info">
                             <h4>Sunshinezito</h4>
-                            <span>Verified</span>
+                            <span class="seller-badge">Verificado</span>
                         </div>
                     </div>
-                    <p style="font-size: 13px; color: #a0a0a0;">⭐ 5.0 (3899 avaliações)</p>
+                    <div class="seller-stats">
+                        ⭐ 5.0 (3.899 avaliações) | 15.437 vendas
+                    </div>
                 </div>
 
-                <div class="price-box">
+                <div class="pricing-card">
                     <div class="price-option">
                         <p>⚡ OFERTA ESPECIAL - LV2800 +GOD HUMAN +99% CHANCES DE FRUTAS MÍTICAS</p>
-                        <div class="value">R$ 3,49</div>
+                        <div class="price-value">R$ 3,49</div>
                     </div>
 
                     <div class="price-option">
                         <p>⚡ OFERTA ESPECIAL - LV2800 +CHANCE DE FRUTAS MÍTICAS (+1 CONTA GRÁTIS)</p>
-                        <div class="value">R$ 1,00</div>
+                        <div class="price-value">R$ 1,00</div>
                     </div>
 
-                    <a href="#" class="buy-btn">Comprar Agora</a>
+                    <a href="#" class="btn-buy">Comprar Agora</a>
                 </div>
             </div>
         </div>
